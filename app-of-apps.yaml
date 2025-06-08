@@ -4,7 +4,7 @@ metadata:
   name: app-of-apps
 spec:
   destination:
-    name: in-cluster
+    url: 'https://kubernetes.default.svc'
     namespace: app-of-apps
   source:
     path: apps
