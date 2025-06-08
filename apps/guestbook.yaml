@@ -8,8 +8,8 @@ metadata:
 spec:
   destination:
     namespace: app-of-apps-guestbook
-    name: kind
-  project: default
+    name: in-cluster
+  project: signal
   source:
     path: general/helm-guestbook
     repoURL: https://github.com/morey-tech/argocd-example-apps
