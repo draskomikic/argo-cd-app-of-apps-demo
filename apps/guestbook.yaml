@@ -8,7 +8,7 @@ metadata:
 spec:
   destination:
     namespace: app-of-apps
-    url: 'https://kubernetes.default.svc'
+    server: 'https://kubernetes.default.svc'
   project: signal
   source:
     path: general/helm-guestbook
