@@ -10,8 +10,7 @@ spec:
     path: apps
     repoURL: 'https://github.com/draskomikic/argo-cd-app-of-apps-demo'
     targetRevision: HEAD
-  project: default
-  # syncPolicy:
-  #   automated:
-  #     prune: true
-  #     selfHeal: true
+  project: signal
+  syncPolicy:
+    automated:
+      selfHeal: true
