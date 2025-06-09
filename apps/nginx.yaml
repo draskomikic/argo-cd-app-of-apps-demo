@@ -1,18 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: guestbook
-  namespace: app-of-apps
+  name: nginx
+  namespace: app-of-apps-ns
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: app-of-apps
+    namespace: app-of-apps-ns
     server: 'https://kubernetes.default.svc'
   project: signal
   source:
-    path: general/helm-guestbook
-    repoURL: https://github.com/morey-tech/argocd-example-apps
+    path: bitnami/nginx
+    repoURL: https://github.com/bitnami/charts
     targetRevision: HEAD
   syncPolicy:
     automated:
